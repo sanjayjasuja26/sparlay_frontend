@@ -1,0 +1,274 @@
+@import '../../../resources/mixins';
+
+.m-withdraw {
+
+	.card {
+  		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+
+  		.card-header {
+  			border-color: $border1;
+  		}
+
+  		.card-body {
+  			padding-top: 40px;
+  			padding-bottom: 20px;
+
+  			h6{
+  				color: $mtext;
+  				font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  			}			
+		}
+  	}
+
+  	.content {
+  		.title {
+  			color: $black;
+  			font-weight: 600;
+  		}
+  		.ant-input-affix-wrapper {
+  			height: 40px;
+  			width: 200px;
+  			margin-top: 15px;
+  			margin-bottom: 10px;
+  			font-size: 16px;
+
+  			i {
+  				color: $black;
+  			}
+  		}
+  		.email {
+  			height: 40px;
+  			width: 350px;
+  			margin-top: 15px;
+  		}
+
+		input {
+			color: $black;
+			font-size: 16px;
+		}
+		input:hover {
+		    border-color: $black !important;
+		}
+		input:focus {
+			border-color: $black;
+		}
+  		h5 {
+  			color: $black;
+  			font-weight: 600;
+  		}
+
+		.amount-withdraw {
+			cursor: pointer;
+			color: $accept;
+			font-weight: 600;
+			font-size: 17px;
+		}
+  	}
+
+	.detail {
+		padding: 15px 0px;
+		margin-bottom: 10px;
+
+		.row {
+			margin: 0!important;
+		}
+		.select {
+			margin: 10px auto 20px;
+		}
+		.info {
+			margin: 0 auto 10px !important;
+			padding: 5px 10px;
+			border-radius: 5px;
+			width: 200px;
+			background-color: #fff2f0;
+			border: 1px solid #ffccc7;
+			label {
+				color: $black;
+			}
+		}
+		.address {
+			margin: auto;
+			padding: 10px 10px 5px;
+			border: 1px solid $border1;
+			border-radius: 4px;
+			.m-button {
+				margin-top: 20px;
+				padding-left: 10px !important;
+				padding-right: 10px !important;
+				height: 32px !important;
+				border-radius: 5px;
+			}
+		}
+		.item {
+			height: 45px;
+			line-height: 45px;
+			width: 160px;
+			text-align: center;
+			border-radius: 5px !important;
+			margin: 0 10px;
+			font-size: 18px;
+		}
+		.ant-select-selection-selected-value, input {
+			color: $black;
+			font-size: 17px;
+		}
+		.ant-select-selection {
+			border-color: $border1;
+		}
+		.ant-select-selection:hover {
+			border-color: $black;
+		}
+		.ant-select-selection:focus {
+			outline: unset;
+			box-shadow: unset;
+			border-color: $black;
+		}
+		.available-title {
+			color: $text;
+			font-size: 15px;
+		}
+	}
+
+  	.available {
+  		h4, h5 {
+  			font-weight: 600;
+  			text-align: center;
+  		}
+
+  		.title {
+  			color: $black;
+  			margin-bottom: 20px;
+			text-align: center;
+  		}
+
+  		.value {
+  			color: $accept;
+  			margin-bottom: 0;
+  		}
+  	}
+
+	.transaction {
+
+		.card-body {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		h4, h5 {
+			font-weight: 600;
+			text-align: center;
+		}
+
+		tbody {
+			tr {
+				cursor: pointer;
+			}
+			td {
+				color: $black;
+				font-size: 16px;
+				border-width: 0px !important;
+			}
+			a {
+				color: red;
+			}
+		}
+		.ant-table-thead, .ant-pagination {
+			display: none;
+		}
+	}
+}
+
+.submit-detail {
+	width: 700px !important;
+
+	.detail {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.ant-result {
+		padding: 10px 0 30px;
+		.ant-result-icon {
+			margin-bottom: 5px;
+			i {
+				font-size: 60px;
+			}
+		}
+		.ant-result-title {
+			font-size: 20px;
+			font-weight: 600;
+		}
+		.ant-result-subtitle {
+			margin-top: 10px;
+			color: $text;
+			font-size: 14px;
+		}
+	}
+
+	.submit-header {
+		padding-left: 10px;
+		padding-right: 10px;
+		color: $black;
+		font-size: 14px;
+		font-weight: 600;
+	}
+	.submit-divider {
+		background-color: $border1 !important;
+		margin-top: 10px !important;
+		margin-bottom: 20px !important;
+	}
+	.submit-body {
+		padding-left: 10px;
+		padding-right: 10px;
+		color: $black;
+		font-size: 15px;
+	}
+}
+
+.initial {
+	width: 900px !important;
+
+	.ant-modal-body {
+		padding-bottom: 0px;
+	}
+	.ant-modal-close {
+		display: none;
+	}
+	.detail {
+		padding-left: 5px;
+		padding-right: 5px;
+		margin: 0px;
+
+		.info {
+			padding: 5px;
+
+			div {
+				height: 170px;
+				border: 1px solid $border1;
+				border-radius: 5px;
+
+				h1 {
+					margin-top: 12px;
+					text-align: center;
+
+					img {
+						width: 40px;
+					}
+				}
+				p {
+					text-align: center;
+					margin: 12px 10px 0px;
+					color: $mtext;
+					font-size: 15px;
+				}
+			}
+		}
+	}
+	.button-center {
+		padding-bottom: 15px;
+	}
+	.g-button {
+		margin-top: 0px !important;
+		margin-bottom: 0px !important;
+	}
+}

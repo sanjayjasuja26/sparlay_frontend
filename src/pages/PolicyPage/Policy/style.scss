@@ -1,0 +1,76 @@
+@import '../../../resources/mixins';
+
+.m-policy {
+	h3, h4, h5, h6 {
+		font-weight: 600;
+	}
+
+	h5 {
+		margin-top: 20px;
+	}
+
+	.noti-top {
+		h5 {
+			margin-top: unset !important;
+		}
+	}
+
+	.card {
+		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+
+		.card-header {
+			border-color: $border1;
+		}
+
+		.card-body {
+			font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+	}
+
+	.utils__title {
+		padding-top: 30px;
+	}
+
+	.item {
+		font-size: 16px;
+		margin-left: 30px;
+		display: flex;
+		p {
+			display: inline-block;
+			margin-bottom: 0;
+			margin-left: 20px;
+		}
+	}
+
+	.item1 {
+		font-size: 16px;
+		display: flex;
+		margin-top: 10px;
+		strong {
+			color: black;
+		}
+		p {
+			display: inline-block;
+			margin-bottom: 0;
+			margin-left: 10px;
+		}
+	}
+
+	.sc {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	a {
+		color: #007bff !important;
+	}
+
+	a:hover {
+		text-decoration: underline !important;
+	}
+}

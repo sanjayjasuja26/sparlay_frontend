@@ -1,0 +1,33 @@
+@import '../../../resources/mixins';
+
+.footer-swag {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 66px;
+  background-color: $black;
+  z-index: 1000;
+
+  .subscribe-group {
+    margin: 13px 20px;
+  }
+
+  .subscribe-email {
+    width: 300px !important;
+    color: $text-darken;
+    border-color: $gray-darken;
+  }
+
+  .link-icon {
+    width: 30px;
+    height: 30px;
+    margin: 10px 10px 10px;
+  }
+
+  .icon-area {
+    text-align: center;
+    padding-right: 20px;
+    padding-top: 8px;
+  }
+
+}

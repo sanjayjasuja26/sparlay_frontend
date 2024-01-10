@@ -1,0 +1,327 @@
+@import '../../../resources/mixins';
+
+.menuTop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 66px;
+  background-color: $black;
+  z-index: 100;
+
+  &__left {
+    float: left;
+  }
+
+  &__right {
+    float: right;
+    background-color: $black;
+    height: 66px;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-m {
+    color: $white;
+    font-size: 16px;
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+
+  &__logo {
+    height: 48px;
+    width: 200px;
+    float: left;
+
+    &__mobile {
+      width: 120px;
+    }
+  }
+
+  &__logoContainer {
+    height: 60px;
+    padding: 8px 20px 0px 17px;
+    img {
+      height: 45px;
+    }
+  }
+
+
+  &__icon {
+    margin-top: rem(16);
+    margin-right: rem(7);
+    float: left;
+
+    @media (max-width: $md-max-width) {
+      display: none !important;
+    }
+  }
+
+  &__dropdown {
+    height: 100%;
+    padding: 22px 10px 18px;
+
+    .login_button {
+      font-size: 15px;
+      padding: 10px 20px 8px;
+      margin-right: 20px;
+    }
+
+    .login_button-m {
+      margin-right: 0px;
+      padding: 10px 10px 8px;
+    }
+
+    .login_button:hover {
+      .menuTop__item-title{
+        color: $white;
+      }
+    }
+
+    .join_button {
+      font-size: 15px;
+      border: 1px solid $sparlay-dark;
+      border-radius: 5px;
+      margin: auto 15px;
+      padding: 10px 20px 8px;
+      color: $sparlay-dark !important;
+      font-weight: 600;
+    }
+
+    .join_button {
+      margin-left: 0px;
+      margin-right: 5px;
+    }
+
+    .join_button:hover {
+      border-color: $sparlay;
+      color: $sparlay !important;
+    }
+
+    .ant-dropdown-link {
+      padding-right: 15px;
+      position: relative;
+
+      &:after {
+        color: $gray-darken;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -2px;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: .255em;
+        vertical-align: .255em;
+        content: '';
+        border-top: .3em solid;
+        border-right: .3em solid transparent;
+        border-bottom: 0;
+        border-left: .3em solid transparent;
+      }
+
+      &:hover {
+        .menuTop__item-title{
+          color: $white;
+        }
+
+        &:after {
+          color: $white;
+        }
+      }
+    }
+
+    .dropdown-link-m {
+      color: $white;
+      font-size: 18px;
+    }
+  }
+
+  &__dropdown-m {
+    padding-left: 0px;
+  }
+
+  &__dropdownMenuIcon {
+    margin-right: 5px;
+    width: 15px;
+  }
+
+  &__item-title {
+    color: $gray-darken;
+  }
+
+  &__balance {
+    margin-left: 10px;
+    color: $sparlay;
+  }
+
+  &__token {
+    border-radius: 3px;
+    background-color: $sparlay;
+    margin: auto 15px;
+    padding: 10px 15px 8px;
+    cursor: default;
+    
+    &__value {
+      color: $black;
+    }
+
+    &__symbol {
+      color: $black;
+      margin-left: 15px;
+    }
+  }
+
+  &__token-m {
+    margin-left: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+
+  .ant-menu-item {
+    background-color: $black;
+    padding: 20px 10px 5px 10px !important;
+
+    a {
+      border-bottom: 2px solid transparent;
+      line-height: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  .ant-menu-item-selected {
+    background: $black !important;
+
+    a {
+      border-bottom-color: $sparlay;
+    }
+
+    .menuTop__item-title {
+      color: $white;
+    }
+  }
+
+  .ant-menu-item-active {
+    background: $black !important;
+
+    .menuTop__item-title {
+      color: $white;
+    }
+  }
+
+  .ant-menu-item-divider {
+    height: 36px !important;
+    margin-top: 6px !important;
+    width: 1px !important;
+    float: left;
+  }
+
+  .ant-menu-dark {
+    background: $black !important;
+
+    .ant-menu-item-divider {
+      background: $black !important;
+    }
+
+    .menuTop__icon {
+      color: $gray-darken;
+    }
+  }
+
+  div.ant-menu-submenu-title {
+    height: 45px;
+  }
+
+  .ant-menu-submenu:hover {
+    .menuTop__item-title {
+      color: $white;
+    }
+  }
+
+  .ant-menu-submenu-popup {
+
+    .ant-menu-item-active {
+      .menuTop__item-title {
+        color: $white !important;
+      }
+    }
+  }
+
+  .ant-menu.ant-menu-dark .ant-menu-item:hover {
+    .menuTop__item-title {
+      color: $white !important;
+    }
+  }
+}
+
+.menuMobile {
+  padding-top: 65px !important;
+  .ant-drawer-content-wrapper {
+    width: 200px !important;
+
+    .ant-drawer-wrapper-body {
+      background: $black !important;
+
+      .ant-drawer-body {
+        width: 200px !important;
+        padding: 20px 0;
+        background: $black !important;
+
+        .ant-menu {
+          background: $black !important;
+
+          .ant-menu-item {
+            padding-left: 30px;
+            height: 35px !important;
+            line-height: 35px !important;
+            margin-bottom: 3px !important;
+            margin-top: 3px !important;
+          }
+
+          .ant-menu-submenu-title {
+            padding-left: 30px;
+            height: 35px !important;
+            line-height: 35px !important;
+            margin-bottom: 3px !important;
+            margin-top: 3px !important;
+          }
+
+          .ant-menu-item-selected {
+            background-color: $black !important;
+            color: $white !important;
+
+            .menuTop__item-title {
+              color: $white !important;
+            }
+          }
+
+          .ant-menu-submenu-active {
+            .menuTop__item-title {
+              color: $white !important;
+            }
+          }
+        }
+      }
+    }    
+  }
+}
+
+.ant-menu-submenu {
+  z-index: 9999999 !important;
+}
+
+.ant-menu-sub {
+
+  .ant-menu-item {
+    padding-left: 30px;
+    height: 35px !important;
+    line-height: 35px !important;
+    margin-bottom: 3px !important;
+    margin-top: 3px !important;
+  }
+}
+
+.ant-dropdown {
+  top: 50px !important;
+}

@@ -1,0 +1,116 @@
+@import '../../../resources/mixins';
+
+.lobby {
+
+	h4 {
+		font-weight: 600;
+	}
+
+  	.card {
+  		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+
+  		.card-header {
+  			border-color: $border1;
+  		}
+
+  		.card-body {
+			font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+  	}
+
+	.utils__title {
+		padding-top: 10px;
+
+		img {
+			width: 25px;
+			height: 25px;
+		}
+		h4{
+			margin-left: 10px;
+		}
+		label {
+			font-size: 16px;
+			color: $text-darken;
+		}
+		.ant-statistic {
+			display: inline-block;
+		}
+		.ant-statistic {
+			margin-top: -5px;
+		}
+	}
+
+	.desktop-body {
+		padding: 15px 40px;
+	}
+
+	.mobile-body {
+		padding: 15px 10px;
+	}
+
+
+	&__contests{
+		width: 100%;
+	}
+
+	&__table{
+
+		.y-button {
+			//width: 80%;
+			margin: auto;
+			height: 36px !important;
+			font-weight: 600;
+			letter-spacing: 0.09em;
+		}
+
+		.tag {
+			height: 30px;
+			margin: 2px auto;
+			align-items: center;
+			display: inline-flex;
+			font-weight: 600;
+			letter-spacing: 0.09em;
+		}
+
+		.ant-table-body {
+			border: 1px solid $border1;
+			border-radius: 4px;
+		}
+
+		.ant-table-pagination {
+			margin-top: 20px;
+			margin-right: 20px;
+		}
+
+		tbody{
+			tr {
+				cursor: pointer;
+			}
+		}
+
+		th div {
+			font-size: 15px;
+			font-weight: 600;
+			color: #514d6a;
+		}
+
+		td {
+			font-size: 13px;
+			color: #1f2836;
+		}
+
+		tr:last-child {
+			td{
+				border-bottom: 0 !important;
+			}
+		}
+
+		.col-center, .col-act {
+			text-align: center;
+		}
+
+		.col-sport {
+			padding-left: 30px;
+		}
+	}
+}

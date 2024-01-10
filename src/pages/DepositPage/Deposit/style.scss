@@ -1,0 +1,157 @@
+@import '../../../resources/mixins';
+
+.sparlay-deposit {
+	h4 {
+  		font-weight: 600;
+  	}
+
+  	.card {
+  		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+
+  		.card-header {
+  			border-color: $border1;
+  		}
+
+  		.card-body {
+			font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+			h5 {
+				font-weight: 600;
+				margin: 0;
+			}
+		}
+  	}
+
+	.des {
+		color: $black;
+		font-size: 16px;
+		margin-bottom: 8px;
+		.m-button {
+			margin-left: 20px;
+			height: 35px !important;
+		}
+	}
+
+	.secure {
+		.utils__title {
+			padding-top: 10px;
+		}
+
+		.card-header {
+			img {
+				width: 25px;
+				height: 25px;
+			}
+		}
+
+		.card-body {
+			padding: 30px 20px 15px;
+		}
+
+		label {
+			font-size: 15px;
+			color: $black;
+		}
+
+		input {
+			text-align: center;
+			background-color: $gray-lighten-more;
+		}
+
+		&__select {
+			margin-top: 10px;
+			margin-bottom: 10px;
+
+			&__item {
+				height: 100px;
+				text-align: center;
+				font-weight: 550;
+				padding-bottom: 10px;
+
+				.amount {
+					display: table-cell;
+					font-size: 18px;
+					height: 50px;
+					vertical-align: bottom;
+				}
+			}
+
+			&__item:before {
+				display: none !important;
+			}
+
+
+			&__other {
+				height: 100px;
+				text-align: center;
+				padding-bottom: 10px;
+
+				.lb {
+					display: block;
+					text-align: center;
+					font-size: 16px;
+					height: 30px;
+					vertical-align: center;
+				}
+
+				&__amount {
+					width: 100%;
+				}
+			}
+			.m-dot {
+				margin: 10px auto 5px;
+				height: 12px;
+				width: 12px;
+				background-color: white;
+				border-radius: 50%;
+				border: 1px solid $gray-darken;
+			}
+
+			.ant-radio-button-wrapper-checked {
+				background-color: $sparlay !important;
+				border-color: $sparlay !important;
+				color: $black !important;
+				box-shadow: unset !important;
+
+				.m-dot {
+					background-color: $black;
+					border-color: $black;
+				}
+			}
+
+		}
+
+		.btn-deposit {
+			font-size: 16px;
+			min-width: 200px;
+		}
+		.amount-deposit {
+			cursor: pointer;
+			color: $sparlay;
+		}
+	}
+
+	.funds {
+		&__title {
+			padding-top: 10px;
+		}
+
+		.card-body {
+			padding: 15px 10px!important;
+		}
+
+		&__row {
+			padding: 0 15px;
+
+			label {
+				color: $black;
+				font-size: 16px;
+				margin-bottom: 8px;
+			}
+		}
+
+		&__value {
+			font-weight: 550;
+		}
+	}
+}

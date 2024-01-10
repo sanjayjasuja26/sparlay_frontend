@@ -1,0 +1,185 @@
+@import '../../../resources/mixins';
+
+.sparlay-upgrade {
+	h4, h5, h6 {
+		font-weight: 600;
+	}
+
+	h6 {
+		font-size: 14px;
+	}
+
+	.card {
+		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+
+		.card-header {
+			border-color: $border1;
+		}
+
+		.card-body {
+			font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+	}
+
+	.des {
+		color: $black;
+		font-size: 14px;
+		margin-bottom: 10px;
+		.y-button {
+			margin-left: 20px;
+			height: 35px !important;
+		}
+	}
+
+	.secure {
+		.utils__title {
+			display: flex;
+			padding-top: 10px;
+			margin-right: -1.6em;
+		}
+
+		.card-header {
+			img {
+				width: 25px;
+				height: 25px;
+			}
+		}
+		.card-body {
+			padding: 30px 20px 15px;
+		}
+
+		label {
+			font-size: 15px;
+			color: $black;
+		}
+
+		.des-select {
+			.item {
+				border-radius: 5px !important;
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+
+			.ant-radio-button-wrapper-checked {
+				color: #0190fe;
+			}
+		}
+
+		.selection-header {
+			padding: 52px 0 0 0;
+			p {
+				text-align: right;
+			}
+		}
+		.select {
+			margin-top: 10px;
+			margin-bottom: 30px;
+
+			.item {
+				height: 160px;
+				text-align: center;
+				font-weight: 550;
+				padding-bottom: 10px;
+
+				.amount {
+					display: table-cell;
+				}
+				.price {
+					font-weight: 600;
+					margin-top: 10px;
+					margin-bottom: 5px;
+				}
+				p {
+					font-size: 13px;
+					line-height: 20px;
+					margin: 0 0 -5px;
+					color: gray;
+				}
+			}
+			.item:before {
+				display: none !important;
+			}
+			.m-dot {
+				margin: 10px auto 15px;
+				height: 12px;
+				width: 12px;
+				background-color: white;
+				border-radius: 50%;
+				border: 1px solid $gray-darken;
+			}
+
+			.item-one_day {
+				height: 120px !important;
+			}
+
+
+			.ant-radio-button-wrapper-checked {
+				background-color: $sparlay !important;
+				border-color: $sparlay !important;
+				color: $black !important;
+				box-shadow: unset !important;
+
+				.m-dot {
+					background-color: $black;
+					border-color: $black;
+				}
+			}
+
+		}
+
+		&__detail {
+			padding: 15px 15px;
+			border: 1px solid $border;
+			border-radius: 5px;
+			margin-bottom: 10px;
+
+			&__select {
+				margin-top: 10px;
+				margin-bottom: 20px;
+			}
+
+			&__item {
+				height: 50px;
+				width: 200px;
+				text-align: center;
+				border-radius: 5px !important;
+
+				.payment {
+					font-size: 17px;
+				}
+
+				.img-paypal {
+					width: 100%;
+					height: 48px;
+					padding: 10px 0 10px;
+
+					img {
+						height: 28px;
+						width: 110px;
+					}
+				}
+			}
+
+			&__item:hover {
+				color: $black;
+			}
+		}
+
+		.btn-purchase {
+			font-size: 16px;
+			margin: auto;
+			margin-top: 20px;
+			width: 200px;
+		}
+
+	}
+
+	.funds {
+		&__title {
+			padding-top: 10px;
+		}
+		.card-body {
+			padding: 20px !important;
+		}
+	}
+}

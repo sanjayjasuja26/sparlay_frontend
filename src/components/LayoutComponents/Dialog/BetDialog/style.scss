@@ -1,0 +1,211 @@
+@import '../../../../resources/mixins';
+
+.view-straight {
+  width: 400px !important;
+  display: block !important;
+  top: 100px !important;
+
+  .ant-modal-close-x {
+    font-size: 18px !important;
+  }
+  .ant-modal-header {
+    background-color: rgb(242, 244, 248) !important;
+    padding-top: 17px;
+    .ant-modal-title {
+      font-weight: 600 !important;
+      font-size: 18px !important;
+    }
+  }
+
+  .field {
+    padding: 12px 16px 10px;
+    border-bottom: 1px solid $border;
+
+    label {
+      font-size: 16px;
+    }
+
+    &__title {
+      color: #a1a4a9;
+    }
+
+    &__value {
+      font-weight: 550;
+    }
+
+    .tag-result {
+      font-size: 21px;
+      line-height: 32px;
+      height: 32px;
+      margin: 0;
+    }
+  }
+
+  .field2 {
+    padding: 12px 16px 10px;
+    border-bottom: 1px solid $border;
+
+    label {
+      font-size: 16px;
+      line-height: 48px;
+    }
+
+    &__title {
+      color: #a1a4a9;
+    }
+
+    &__value {
+      display: block;
+      font-weight: 550;
+
+      div {
+        font-size: 16px;
+        text-align: right;
+      }
+    }
+  }
+
+  .ant-modal-footer {
+    border-top: 0;
+    padding: 15px 10px;
+
+    button {
+      color: white;
+      height: 42px;
+      width: 135px;
+      font-size: 15px;
+
+      .anticon{
+        vertical-align: 0.08em;
+        font-size: 16px;
+        margin-left: 14px;
+      }
+    }
+
+    .decline {
+      background-color: $decline;
+    }
+
+    .decline:hover {
+      border-color: $decline-dark;
+    }
+
+    .accept {
+      background-color: $accept;
+    }
+
+    .accept:hover {
+      border-color: $accept-dark;
+    }
+  }
+}
+
+.view-parlay {
+  width: 400px !important;
+  display: block !important;
+  top: 100px !important;
+
+  .ant-modal-close-x {
+    font-size: 18px !important;
+  }
+
+  .ant-modal-header {
+    background-color: rgb(242, 244, 248) !important;
+    padding-top: 17px;
+    .ant-modal-title {
+      font-weight: 600 !important;
+      font-size: 18px !important;
+    }
+  }
+
+  .field {
+    padding: 12px 16px 10px;
+    border-bottom: 1px solid $border;
+
+    &__title {
+      font-size: 16px;
+      color: #a1a4a9;
+    }
+
+    &__value {
+      font-size: 16px;
+      font-weight: 550;
+    }
+
+    .tag-condition {
+      margin: 0;
+      color: black;
+      font-weight: 600;
+    }
+
+    .ant-divider {
+      margin: 5px 0px 0px;
+    }
+
+    .tag-result {
+      font-size: 21px;
+      line-height: 32px;
+      height: 32px;
+      margin: 0;
+    }
+  }
+
+  .field2 {
+    padding: 0px 0px 0px;
+
+    &__title {
+      color: #a1a4a9;
+      font-size: 13px;
+    }
+
+    &__value {
+      font-weight: 550;
+      font-size: 14px;
+    }
+  }
+
+  .field3 {
+    padding: 0px 10px;
+  }
+
+  .ant-modal-footer {
+    border-top: 0;
+    padding: 15px 10px;
+
+    button {
+      color: white;
+      height: 42px;
+      width: 135px;
+      font-size: 15px;
+
+      .anticon{
+        vertical-align: 0.08em;
+        font-size: 16px;
+        margin-left: 14px;
+      }
+    }
+
+    .decline {
+      background-color: $decline;
+    }
+
+    .decline:hover {
+      border-color: $decline-dark;
+    }
+
+    .accept {
+      background-color: $accept;
+    }
+
+    .accept:hover {
+      border-color: $accept-dark;
+    }
+  }
+
+}
+
+.tab-m {
+  .ant-tabs-tab {
+    width: calc(42vw) !important;
+  }
+}

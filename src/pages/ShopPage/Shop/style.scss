@@ -1,0 +1,27 @@
+@import '../../../resources/mixins';
+
+.m-shop {
+	.swag {
+		height: 100%;
+	  	img {
+	  		width: 70%;
+	  		display: block;
+	  		margin: 60px auto;
+	  	}
+	}
+
+	.swag-title {
+		img {
+			width: 50%;
+			display: block;
+			margin: 100px auto 0;
+		}
+
+		button {
+			display: block;
+			margin: 30px auto 0;
+			width: 150px;
+		}
+	}
+}
+

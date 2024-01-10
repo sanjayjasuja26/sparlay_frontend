@@ -1,0 +1,48 @@
+@import '../../../resources/mixins';
+
+.footer {
+  background: $gray-border;
+  padding: rem(40) rem(30) rem(30);
+  margin: 0;
+  border-radius:0;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+
+  @media (max-width: $sm-max-width) {
+    margin: rem(-25) 0 0;
+  }
+
+  p {
+    font-size: 15px;
+    color: $mtext;
+  }
+
+  &__bottom {
+    border-top: 1px solid $gray;
+    padding-top:  rem(20);
+    margin-top:  rem(10);
+  }
+
+  &__copyright {
+    float: right;
+    display: inline-block;
+    position: relative;
+    margin-top: rem(20);
+
+    @media(max-width: $xs-max-width) {
+      margin-top: rem(20);
+      float: none;
+    }
+
+    img {
+      float: left;
+      width: 3vw;
+      position: absolute;
+      top: 0.2vw;
+    }
+    span {
+      display: block;
+      margin-left: 4vw;
+    }
+  }
+}

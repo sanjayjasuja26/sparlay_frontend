@@ -1,0 +1,785 @@
+@import '../../../resources/mixins';
+
+.m-main {
+  	.card {
+		border: 4px solid #FFFFFF;
+		box-sizing: border-box;
+		box-shadow: 0px 5px 44px -2px rgba(0, 0, 0, 0.6);
+		border-radius: 4px;
+		background-color: rgba(255, 255, 255, 0.9);
+  		.card-header {
+			background-color: rgba(255, 255, 255, 0.9);
+			h4 {
+				font-weight: 700;
+			}
+  		}
+
+  		.card-body {
+			background-color: rgba(255, 255, 255, 0.9);
+		}
+  	}
+}
+
+.refer {
+	.card-body {
+		padding-top: 20px;
+		padding-bottom: 0px;
+	}
+
+	.fire-box {
+		position: absolute;
+		width: 64px;
+		height: 64px;
+		left: calc(50% - 64px/2 + 0.4px);
+		text-align: center;
+		background: rgba(238, 194, 1, 0.11);
+		border-radius: 12px;
+	}
+
+	.fire {
+		margin-top: 10px;
+		width: 40px;
+		height: 40px;
+	}
+
+	h1 {
+		margin-top: 84px;
+		font-size: 24px;
+  		font-weight: 800;
+  		font-stretch: normal;
+  		font-style: normal;
+  		line-height: 1.42;
+  		letter-spacing: normal;
+  		text-align: center;
+  		color: $refer-title;
+	}
+
+	h4 {
+		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-size: 19px;
+  		font-weight: 600;
+  		font-stretch: normal;
+  		font-style: normal;
+  		line-height: 1.21;
+  		letter-spacing: normal;
+  		text-align: center;
+  		color: $sparlay-yellow;
+	}
+
+	h5 {
+		text-align: center;
+		margin-bottom: 20px;
+		font-size: 19px;
+  		font-weight: 600;
+  		font-stretch: normal;
+  		font-style: normal;
+  		line-height: 1.26;
+  		letter-spacing: normal;
+  		text-align: center;
+  		color: #3d3e39;
+	}
+
+	.link-group {
+		margin: 0 auto 20px;
+		text-align: center;
+	}
+
+	.sharelink {
+		width: 70%;
+		color: $text-darken;
+		border-color: $gray-darken;
+		background-color: $gray-lighten-more;
+	}
+
+	.link-icon {
+		width: 50px;
+		height: 50px;
+		margin: 0 10px 30px;
+	}
+
+	.icon-area {
+		text-align: center;
+	}
+
+}
+
+.football-player-area {
+	text-align: center;
+	display: inline-block;
+  	margin: 0 auto;
+}
+
+.football-player{
+	margin-top: calc(37% - 538px/2);
+	right: calc(59% - 587px/2);
+	position: absolute;
+	width: 587px;
+	height: 538px;
+}
+
+.refer-m {
+	h1 {
+		font-size: 20px;
+	}
+
+	h4 {
+		font-size: 16px;
+	}
+
+	.sharelink {
+		width: 60%;
+	}
+}
+
+.opns {
+	.card-header {
+		img {
+			margin-top: -10px;
+			height: 40px;
+		}
+		h4 {
+			margin: 0px 10px;
+			line-height: 53px;
+		}
+	}
+	.card-body {
+		padding: 10px 0px;
+		.opn {
+			//height: 200px;
+			margin: 5px;
+			//border: 1px solid $border;
+			//border-radius: 5px;
+  			border-radius: 3px;
+  			box-shadow: 0 6px 50px 0 rgba(157, 156, 156, 0.34);
+  			border-style: solid;
+  			border-width: 2px;
+  			border-image-source: linear-gradient(to bottom, #eec201, #ffffff);
+  			border-image-slice: 1;
+  			background-image: linear-gradient(to bottom, #ffffff, #ffffff), linear-gradient(to top, #eec201, #ffffff);
+  			background-origin: border-box;
+  			background-clip: content-box, border-box;
+
+			.opn-detail {
+				background-image: linear-gradient(to bottom, #eec201, #eec201), linear-gradient(to top, rgba(255, 255, 255, 0), #ffffff);
+				padding: 10px;
+
+				p {
+					margin-bottom: 8px;
+				}
+				label {
+					font-weight: 600;
+					color: $mtext;
+				}
+				.buttons {
+					margin-top: 10px;
+
+					button {
+						margin: auto;
+						height: 35px !important;
+					}
+				}
+			}
+		}
+		.btn-arrow {
+			margin-top: 55px;
+			border-width: 0px;
+			font-size: 18px;
+			width: 100%;
+			height: 50px;
+		}
+	}
+}
+
+.bets {
+	&__title {
+		padding-top: 15px;
+		padding-bottom: 8px;
+
+		img {
+			width: 20px;
+			height: 25px;
+		}
+
+		h4{
+			margin-left: 10px;
+		}		
+	}
+
+	.card-body {
+		//padding: 0 0 5px 0 !important;
+	}
+
+	.menuBets {
+
+		&__navigation {
+			border: 0 !important;
+
+			> .ant-menu-item-divider {
+				margin: 0 !important;
+				background-color: transparent;
+				height: 16px;
+				border: 0 !important;
+			}
+
+			.ant-menu-submenu {
+				min-height: 75px;
+				border-radius: 3px;
+  				box-shadow: 0 6px 50px 0 rgba(157, 156, 156, 0.34);
+  				border-style: solid;
+  				border-width: 2px;
+  				border-image-source: linear-gradient(to bottom, #eec201, #ffffff);
+  				border-image-slice: 1;
+  				background-image: linear-gradient(to bottom, #ffffff, #ffffff), linear-gradient(to top, #eec201, #ffffff);
+			}
+
+			.ant-menu-submenu-title {
+				min-height: 75px;
+				//background-color: white !important;
+			}
+
+			li.ant-menu-item {
+				background-color: white !important;
+				width: 90%;
+				margin-left: 16px;
+			}
+
+			li.ant-menu-item:after {
+				border-color: white !important;
+			}
+
+			.ant-menu-submenu-arrow:before, .ant-menu-submenu-arrow:after {
+				background: rgba(0, 0, 0, 0.65) !important;
+			}
+
+			.ant-menu-item{
+				color: rgba(0, 0, 0, 0.65) !important;
+			}
+
+			.ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left {
+				border-right: none;
+			}
+
+			.menuLeft__icon {
+				opacity: .8;
+			}
+
+			.menuLeft__item-icon {
+				width: 54.3px;
+				height: 54.3px;
+			}
+
+			.menuLeft__item-dot{
+				margin-left: 13.57px;
+				margin-right: 8.48px;
+				width: 7.24px;
+				height: 7.24px;
+  				background-color: $sparlay-yellow;
+  				border-radius: 50%;
+  				display: inline-block;
+			}
+
+			.menuLeft__item-title {
+				height: 75px;
+				font-style: normal;
+				font-weight: 800;
+				font-size: 15px;
+				line-height: 20px;
+				color: $bets-title !important;
+			}
+
+			.menuBets__item-title {
+				background: $black;
+				color: $sparlay;
+				//border: 1px solid $sparlay;
+				border-radius: 4px;
+				height: 35px;
+				padding-left: 10px;
+				padding-right: 10px;
+				cursor: pointer;
+			}
+
+			.menuAction__item-title {
+				color: $blue;
+			}
+
+			.menuDes__item-title {
+				color: $gray-darken;
+			}
+		}
+	}
+
+	.ant-menu-item, .ant-menu-submenu-title {
+		transition: padding 0s !important;
+	}
+}
+
+.games {
+	&__title {
+		padding-top: 10px;
+	}
+
+	.card-header {
+		input {
+			width: 155px;
+			height: 36px;
+			font-size: 16.5px;
+			font-weight: 550 !important;
+			color: $black;
+			padding-left: 32px;
+			border-width: 1 !important;
+		}
+
+
+		.ant-calendar-picker-icon {
+		    position: absolute;
+		    width: 14px;
+		    height: 14px;
+		    left: 8px;
+		    top: 38%;
+		    margin-top: -7px;
+		    line-height: 20px;
+		    font-size: 16px;
+		    color: $black;
+		}
+	}
+
+	.card-body {
+		padding: 0;
+
+		.des {
+			color: $border;
+		}
+
+		.no_games {
+			padding: 20px 20px;
+
+			p {
+				text-align: center;
+				margin: 0;
+				font-size: 16px;
+				color: $gray-darken;
+			}
+		}
+
+		.games-header-area {
+			padding: 10px 0;
+		}
+
+		.games-header {
+			padding: 0 0 0 10px;
+			text-align: center;
+		}
+
+		.games-header-m {
+			padding: 0 0 0 12px;
+			text-align: center;
+		}
+
+		.games-info {
+			padding: 10px 20px 10px 10px;
+			border-top: 1px solid #e4e9f0;
+		}
+
+		.games-info-m {
+			padding: 10px 10px 10px 5px;
+			border-top: 1px solid #e4e9f0;
+		}
+
+		.games-time {
+			text-align: center;
+			border-right: 1px solid #e4e9f0;
+			border-top: 1px solid #e4e9f0;
+
+			label {
+				display: block;
+			}
+		}
+
+		.games-time-des {
+			color: #c0bdd0;
+		}
+
+		.games-time-val {
+			padding-top: 42px;
+			color: $black;
+		}
+
+		.games-team {
+			label {
+				display: block;
+			}
+		}
+
+		.games-team-m {
+			display: flex;
+			align-items: center;
+			label {
+				display: block;
+			}
+		}
+
+		.games-team-sport {
+			color: $blue;
+		}
+
+		.games-team-name1 {
+			color: $black;
+		}
+
+		.games-team-name2 {
+			color: $black;
+			line-height: 44px;
+		}
+
+		.games-team-name2-m {
+			color: $black;
+		}
+
+		.games-rect {
+			padding: 0 0 0 10px;
+
+			label {
+				margin-top: 7px;
+				width: 100%;
+				color: white;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				border-radius: 3px;
+				background-color: rgba(0, 0, 0, 0.65);
+			}
+		}
+
+		.games-rect-m {
+			padding: 0 0 0 1px;
+
+			label {
+				margin-top: 7px;
+				width: 100%;
+				color: white;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				border-radius: 3px;
+				background-color: rgba(0, 0, 0, 0.65);
+				font-size: 11px;
+			}
+		}
+
+		.games-more {
+			padding: 0;
+			border-top: 1px solid #e4e9f0;
+			text-align: center;
+
+			a {
+				line-height: 130px;
+			}
+		}
+
+		.games-pointer {
+			cursor: pointer;
+		}
+	}
+}
+
+.events {
+	.utils__title {
+		padding-top: 30px;
+	}
+
+	h2 {
+		text-align: center;
+		font-weight: 600;
+	}
+
+	.card-header {
+		border-bottom: 0;
+
+		button {
+			background-color: rgba(0, 0, 0, 0) !important;
+			margin-top: 25px;
+			padding-bottom: 10px;
+			height: 42px;
+			width: 42px;
+			font-size: 24px;
+			border: 0;
+			color: black;
+		}
+
+		button:focus {
+			color: black;
+		}
+
+		button:hover {
+			color: black;
+		}
+	}
+
+	.card-body {
+		padding-top: 35px;
+		padding-bottom: 5px;
+		padding-right: 5px;
+
+		h1 {
+			color: $sparlay;
+			text-align: center;
+			font-size: 42px;
+			font-weight: 600;
+			margin-bottom: 0;
+		}
+
+		img {
+			height: 35px;
+
+		}
+	}
+}
+
+
+.actview-straight {
+	width: 400px !important;
+	display: block !important;
+	top: 100px !important;
+
+	.ant-modal-close-x {
+		font-size: 18px !important;
+	}
+
+	.ant-modal-header {
+		background-color: rgb(242, 244, 248) !important;
+		padding-top: 17px;
+		.ant-modal-title {
+			font-weight: 600 !important;
+			font-size: 18px !important;
+		}
+	}
+
+	.field {
+		padding: 12px 16px 10px;
+		border-bottom: 1px solid $border;
+
+		label {
+			font-size: 16px;
+		}
+
+		&__title {
+			color: #a1a4a9;
+		}
+
+		&__value {
+			font-weight: 550;
+		}
+
+		&__result {
+			text-align: center;
+			font-size: 16px;
+			font-weight: 600;
+		}
+
+		.ant-tag {
+			font-size: 21px;
+			line-height: 32px;
+			height: 32px;
+			margin: 0;
+		}
+	}
+
+	.field2 {
+		padding: 12px 16px 10px;
+		border-bottom: 1px solid $border;
+
+		label {
+			font-size: 16px;
+			line-height: 48px;
+		}
+
+		&__title {
+			color: #a1a4a9;
+		}
+
+		&__value {
+			display: block;
+			font-weight: 550;
+
+			div {
+				font-size: 16px;
+				text-align: right;
+			}
+		}
+	}
+
+	.ant-modal-footer {
+		border-top: 0;
+		padding: 15px 10px;
+
+		button {
+			color: white;
+			height: 42px;
+			width: 135px;
+			font-size: 15px;
+
+			.anticon{
+				vertical-align: 0.08em;
+				font-size: 16px;
+				margin-left: 14px;
+			}
+		}
+
+		.decline {
+			background-color: $decline;
+		}
+
+		.decline:hover {
+			border-color: $decline-dark;
+		}
+
+		.accept {
+			background-color: $accept;
+		}
+
+		.accept:hover {
+			border-color: $accept-dark;
+		}
+	}
+}
+
+.actview-parlay {
+	width: 400px !important;
+	display: block !important;
+	top: 100px !important;
+
+	.ant-modal-close-x {
+		font-size: 18px !important;
+	}
+
+	.ant-modal-header {
+		background-color: rgb(242, 244, 248) !important;
+		padding-top: 17px;
+		.ant-modal-title {
+			font-weight: 600 !important;
+			font-size: 18px !important;
+		}
+	}
+
+	.field {
+		padding: 12px 16px 10px;
+		border-bottom: 1px solid $border;
+
+		&__title {
+			font-size: 16px;
+			color: #a1a4a9;
+		}
+
+		&__value {
+			font-size: 16px;
+			font-weight: 550;
+		}
+
+		&__result {
+			text-align: center;
+			font-size: 16px;
+			font-weight: 600;
+		}
+
+		.tag-result {
+			font-size: 21px;
+			line-height: 32px;
+			height: 32px;
+			margin: 0;
+		}
+
+		.tag-condition {
+			margin: 0;
+			color: black;
+			font-weight: 600;
+		}
+
+		.ant-divider {
+			margin: 5px 0px 0px;
+		}
+	}
+
+	.field2 {
+		padding: 0px 0px 0px;
+
+		&__title {
+			color: #a1a4a9;
+			font-size: 13px;
+		}
+
+		&__value {
+			font-weight: 550;
+			font-size: 14px;
+		}
+	}
+
+	.field3 {
+		padding: 0px 10px;
+	}
+
+	.ant-modal-footer {
+		border-top: 0;
+		padding: 15px 10px;
+
+		button {
+			color: white;
+			height: 42px;
+			width: 135px;
+			font-size: 15px;
+
+			.anticon{
+				vertical-align: 0.08em;
+				font-size: 16px;
+				margin-left: 14px;
+			}
+		}
+
+		.decline {
+			background-color: $decline;
+		}
+
+		.decline:hover {
+			border-color: $decline-dark;
+		}
+
+		.accept {
+			background-color: $accept;
+		}
+
+		.accept:hover {
+			border-color: $accept-dark;
+		}
+	}
+}
+
+.tab-m {
+	.ant-tabs-tab {
+		width: calc(42vw) !important;
+	}
+}
+
+.no-footer {
+	.ant-modal-footer {
+		height: 5px;
+		padding: 0;
+		visibility: hidden;
+	}
+}
+
+.drawer-handle {
+	background-color: $drawer-background;
+}
+
+.drawer-handle-icon::before {
+	background-color: $drawer-icon;
+}
+
+.drawer-handle-icon {
+	background-color: $drawer-icon;
+}
+
+.drawer-handle-icon::after {
+	background-color: $drawer-icon;
+}

@@ -1,0 +1,205 @@
+@import '../../../resources/mixins';
+
+.pac-container.pac-logo:after {
+	content: none !important;
+}
+
+.anticon-info-circle {
+	font-size: 25px;
+	svg {
+		padding-bottom: 6px;
+	}
+}
+.anticon-info-circle:hover {
+	cursor: pointer;
+}
+
+
+.ant-radio-button-wrapper:focus-within {
+	outline: 0 !important;
+}
+
+.ant-drawer {
+	padding-top: 66.5px;
+}
+
+.sparlay-motif {
+	color: $sparlay;
+}
+
+.sparlay-coin {
+	width: 18px;
+	height: 18px;
+	margin: 0px 5px;
+}
+.sparlay-fund {
+	color: #52c41a !important;
+	margin: 0px 3px;
+}
+
+.m-content {
+	position: absolute;
+	top: 0px;
+	padding-top: 66px;
+
+	.utils__content {
+		padding-top: 20px;
+		padding-bottom: 0;
+	}
+
+	.p-10 {
+		padding: 10px;
+	}
+
+	.ph-no {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.pv-no {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.no-padding {
+		padding: 0;
+	}
+
+	.no-margin {
+		margin: 0 !important;
+	}
+
+	.col-center {
+		text-align: center;
+	}
+}
+.m-content-shop {
+	margin-left: 0;
+	width: 100%;
+}
+.m-content-noshop {
+	margin-left: 265px;
+	width: calc(100% - 265px);
+}
+.m-content-mobile {
+	width: 100%;
+}
+
+.m-button {
+	display: block;
+	background-color: $black !important;
+	color: $gray-darken !important;
+	padding-top: 2px !important;
+	height: 42px !important;
+	border-width: 0 !important;
+	font-size: 16px !important;
+}
+.m-button:hover {
+	color: white !important;
+}
+.m-button:active {
+	color: $gray-darken !important;
+}
+
+.y-button {
+	display: block;
+	background-color: $sparlay !important;
+	color: $text-darken-more !important;
+	padding-top: 2px !important;
+	height: 42px !important;
+	border-width: 0 !important;
+	font-size: 16px !important;
+	font-weight: 600 !important;
+}
+.y-button:hover {
+	color: black !important;
+}
+.y-button:active {
+	color: $text-darken-more !important;
+}
+
+.r-button {
+	display: block;
+	background-color: $decline !important;
+	color: #ffffff !important;
+	padding-top: 2px !important;
+	height: 42px !important;
+	font-size: 16px !important;
+	//font-weight: 600 !important;
+}
+.r-button:hover {
+	
+	border-color: $decline-dark !important;
+}
+
+.g-button {
+	display: block !important;
+	background-color: $accept !important;
+	color: #eec201 !important;
+	padding-top: 2px !important;
+	height: 42px !important;
+	font-size: 16px !important;
+	//font-weight: 600 !important;
+}
+.g-button:hover {
+	border-color: $accept-dark !important;
+}
+
+.btn-apply {
+	//color: $text !important;
+	margin: 5px auto;
+	height: 25px !important;
+}
+
+
+.sport-small {
+	width: 15px;
+    height: 15px;
+    margin-right: 6px;
+    margin-bottom: 3px;
+    margin-left: 0px;
+}
+.sport-default {
+	width: 20px;
+	height: 20px;
+	margin-right: 6px;
+	margin-left: 0px;
+}
+
+.img-paypal {
+	width: 100%;
+	img {
+		height: 28px;
+		width: 110px;
+	}
+}
+.img-card {
+	img {
+		margin-top: -5px;
+		height: 22px;
+	}
+}
+
+.sp-row {
+	margin: 0 !important;
+}
+
+.button-center {
+	padding: auto;
+
+	.ant-btn {
+		font-size: 12px;
+		line-height: 16px;
+		font-weight: 700;
+		//margin: 30px auto 10px !important;
+	}
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+
+.no-margin {
+	margin: 0 !important;
+}
+

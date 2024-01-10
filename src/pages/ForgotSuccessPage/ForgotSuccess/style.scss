@@ -1,0 +1,144 @@
+@import '../../../resources/mixins';
+
+.m-fgsuccess {
+  background-size: cover;
+  background-color: #111111;
+  background-position: center center;
+
+  &--fullscreen {
+    position: fixed;
+    z-index: 20000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  &__form-actions {
+    margin: rem(20) 0;
+  }
+
+  &__button {
+    background-color: $black !important;
+    color: white !important;
+    height: 45px;
+    border-width: 0 !important;
+  }
+
+  &__button:hover {
+    background-color: #222222 !important;
+    color: white !important;
+    height: 45px;
+  }
+
+  &__input {
+    height: 45px;
+  }
+  &__input:hover {
+    border-color: #000000 !important;
+  }
+  &__input:focus {
+    border-color: #000000;
+  }
+
+  &__block {
+    padding: rem(20) rem(40) rem(80);
+    margin-bottom: rem(70);
+    width: 100%;
+    align-self: center;
+    position: relative;
+    z-index: 2;
+
+    &--pb200 {
+      padding-bottom: rem(200) !important;
+    }
+
+    @media (max-width: $md-max-width) {
+      padding: rem(40) rem(20) rem(80);
+    }
+
+    &__inner {
+      min-width: rem(300);
+      max-width: rem(400);
+      max-height: rem(460);
+      margin: 0 auto;
+      padding-top: 0;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: rem(20);
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: $white;
+      position: relative;
+      box-shadow: 0 10px 40px -20px rgba(0,0,50,.2),  0 10px 80px -20px rgba(0,0,50,.1);
+    }
+
+    &__form {
+      margin-top: rem(30);
+      margin-left: rem(40);
+      margin-right: rem(40);
+      margin-bottom: rem(30);
+      position: relative;
+      z-index: 2;
+
+      img {
+        display: block;
+        width: 65px;
+        height: 70px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      label {
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        color: $black;
+      }
+
+
+    }
+
+    @media (min-width: $md-min-width) {
+      &--extended {
+        .m-fgsuccess__block__inner {
+          max-width: rem(400);
+          margin-top: rem(30); 
+          padding: rem(30) rem(30) rem(20);
+          max-height: rem(430);
+        }
+
+        .m-fgsuccess__block__form {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+
+  &__header {
+    align-self: flex-start;
+    width: 100%;
+    color: $white;
+    padding: rem(100) rem(40) 0;
+
+    @media (max-width: $md-max-width) {
+      padding: rem(40) rem(20) 0;
+
+      .m-login__header__logo {
+        text-align: center;
+      }
+    }
+
+    &__logo {
+      text-align: center;
+
+      img {
+        max-width: rem(200);
+      }
+    }
+  }
+}

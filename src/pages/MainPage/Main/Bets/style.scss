@@ -1,0 +1,67 @@
+@import '../../../../resources/mixins';
+
+.menuBets {
+
+  &__navigation {
+    border: 0 !important;
+
+    > .ant-menu-item-divider {
+      margin: 0 !important;
+    }
+
+    .ant-menu-submenu-title {
+      background-color: white !important; 
+    }
+
+    li.ant-menu-item {
+      background-color: white !important;
+    }
+
+    li.ant-menu-item:after {
+      border-color: white !important;
+    }
+
+    .ant-menu-submenu-arrow:before, .ant-menu-submenu-arrow:after {
+      background: rgba(0, 0, 0, 0.65) !important;
+    }
+
+    .ant-menu-item{
+      color: rgba(0, 0, 0, 0.65) !important;
+    }
+
+    .ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left {
+      border-right: none;
+    }
+
+    .menuLeft__icon {
+      opacity: .8;
+    }
+
+    .menuLeft__item-title {
+      color: $black !important;
+    }
+
+    .menuBets__item-title {
+      background: $black;
+      color: $sparlay;
+      border: 1px solid $sparlay;
+      border-radius: 4px;
+      height: 35px;
+      padding-left: 10px;
+      padding-right: 10px;
+      cursor: pointer;
+    }
+
+    .menuAction__item-title {
+      color: $blue;
+    }
+
+    .menuDes__item-title {
+      color: $gray-darken;
+    }
+  }
+}
+
+.ant-menu-item, .ant-menu-submenu-title {
+  transition: padding 0s !important;
+}

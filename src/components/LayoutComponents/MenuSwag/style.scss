@@ -1,0 +1,136 @@
+@import '../../../resources/mixins';
+
+.menuSwag {
+  position: fixed;
+  top: 66px;
+  width: 100%;
+  height: 68px;
+  background-color: $black;
+  border-top: 1px solid $black-lighten-more;
+  z-index: 100;
+
+  &__left {
+    float: left;
+  }
+
+  &__right {
+    float: right;
+    background-color: $black;
+  }
+
+  &__logo {
+    height: 48px;
+    width: 280px;
+    float: left;
+  }
+
+  &__logoContainer {
+    height: 60px;
+    padding: 8px 20px 0px 17px;
+    img {
+      height: 45px;
+    }
+  }
+
+  &__icon {
+    margin-top: rem(16);
+    margin-right: rem(7);
+    float: left;
+
+    @media (max-width: $md-max-width) {
+      display: none !important;
+    }
+  }
+
+  &__dropdown {
+    height: 100%;
+    padding: 25px 10px 18px;
+
+    .ant-dropdown-link {
+      padding-right: 15px;
+      position: relative;
+
+      &:after {
+        color: $gray-darken;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -2px;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: .255em;
+        vertical-align: .255em;
+        content: '';
+        border-top: .3em solid;
+        border-right: .3em solid transparent;
+        border-bottom: 0;
+        border-left: .3em solid transparent;
+      }
+
+      &:hover {
+        .menuTop__item-title{
+          color: $white;
+        }
+
+        &:after {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &__dropdownMenuIcon {
+    margin-right: 5px;
+  }
+
+  &__item-title {
+    color: $gray-darken;
+  }
+
+  .ant-menu-submenu {
+    background-color: $black;
+    padding: 12px 10px 5px 10px !important;
+    color: $gray-darken;
+  }
+
+  .ant-menu-submenu-open {
+    .menuSwag__item-title {
+      color: $white;
+    }
+  }
+
+  .ant-menu-submenu-selected {
+    .menuSwag__item-title {
+      color: $white;
+    }
+  }
+
+  .ant-menu-dark {
+    background: $black !important;
+
+    .menuSwag__icon {
+      color: $gray-darken;
+    }
+  }
+}
+
+.ant-menu-submenu-popup {
+  .ant-menu {
+    background-color: $black !important;
+    min-width: 120px !important;
+  }
+
+  .ant-menu-item-active {
+    .menuSwag__item-title {
+      color: $white;
+    }
+  }
+
+  .ant-menu-item-selected {
+    background-color: $black !important;
+    .menuSwag__item-title {
+      color: $white;
+    }
+  }
+}

@@ -1,0 +1,397 @@
+@import '../../../../resources/mixins';
+
+.prompt-login {
+  width: 400px !important;
+  display: block !important;
+  top: 100px !important;
+
+  .ant-modal-close-x {
+    font-size: 18px !important;
+  }
+
+  .ant-modal-header {
+    background-color: rgb(242, 244, 248) !important;
+    padding-top: 17px;
+    .ant-modal-title {
+      font-weight: 600 !important;
+      font-size: 18px !important;
+    }
+  }
+
+  .field {
+    padding: 12px 16px 10px;
+    text-align: center;
+
+    label {
+      font-size: 16px;
+    }
+
+    &__title {
+      color: $black;
+    }
+
+    &__value {
+      font-weight: 550;
+    }
+  }
+
+  .ant-modal-footer {
+    border-top: 0;
+    padding-top: 30px;
+    padding-bottom: 15px;
+
+    button {
+      color: white;
+      height: 38px;
+      width: 100px;
+      font-size: 15px;
+
+      .anticon{
+        vertical-align: 0.08em;
+        font-size: 16px;
+        margin-left: 14px;
+      }
+    }
+
+    .cancel {
+      background-color: $decline;
+    }
+
+    .cancel:hover {
+      border-color: $decline-dark;
+    }
+
+    .ok {
+      background-color: $accept;
+    }
+
+    .ok:hover {
+      border-color: $accept-dark;
+    }
+  }
+}
+
+.prompt-cash {
+  width: 400px !important;
+  display: block !important;
+  top: 100px !important;
+
+  .ant-modal-close-x {
+    font-size: 18px !important;
+  }
+
+  .ant-modal-header {
+    background-color: rgb(242, 244, 248) !important;
+    padding-top: 22px;
+    .ant-modal-title {
+      font-weight: 600 !important;
+      font-size: 18px !important;
+    }
+  }
+
+  .field {
+    padding: 12px 16px 10px;
+    text-align: center;
+
+    label {
+      font-size: 16px;
+    }
+
+    &__title {
+      color: $black;
+    }
+
+    &__value {
+      font-weight: 550;
+    }
+  }
+
+  .ant-modal-footer {
+    border-top: 0;
+    padding-top: 30px;
+    padding-bottom: 15px;
+
+    button {
+      color: white;
+      height: 38px;
+      width: 100px;
+      font-size: 15px;
+
+      .anticon{
+        vertical-align: 0.08em;
+        font-size: 16px;
+        margin-left: 14px;
+      }
+    }
+
+    .cancel {
+      background-color: $decline;
+    }
+
+    .cancel:hover {
+      border-color: $decline-dark;
+    }
+
+    .ok {
+      background-color: $accept;
+    }
+
+    .ok:hover {
+      border-color: $accept-dark;
+    }
+  }
+}
+
+.prompt-token {
+  width: 500px !important;
+  display: block !important;
+
+  h3 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  h4 {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 16px;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  a {
+    color: #007bff !important;
+  }
+  a:hover {
+    text-decoration: underline !important;
+  }
+  .link-group {
+    margin: 40px auto 20px;
+    text-align: center;
+  }
+
+  .sharelink {
+    width: 70%;
+    color: $text-darken;
+    border-color: $gray-darken;
+    background-color: $gray-lighten-more;
+  }
+
+  .link-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px 10px;
+  }
+
+  .icon-area {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .describe {
+    text-align: center;
+    margin-bottom: 4px;
+  }
+  .ant-modal-content {
+    padding: 20px 30px;
+  }
+  //.ant-modal-close-x {
+  //	display: none;
+  //}
+  .ant-modal-footer {
+    height: 5px;
+    padding: 0;
+    visibility: hidden;
+  }
+}
+
+.prompt-membership {
+  width: 500px !important;
+  display: block !important;
+
+  h3 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  h4 {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 16px;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  a {
+    color: #007bff !important;
+  }
+  a:hover {
+    text-decoration: underline !important;
+  }
+  .describe {
+    text-align: center;
+    margin-bottom: 4px;
+  }
+  .ant-modal-content {
+    padding: 20px 30px;
+  }
+  //.ant-modal-close-x {
+  //	display: none;
+  //}
+  .ant-modal-footer {
+    height: 5px;
+    padding: 0;
+    visibility: hidden;
+  }
+}
+
+.prompt-suspend {
+  width: 400px !important;
+
+  .field {
+    padding: 12px 16px 10px;
+    text-align: center;
+
+    label {
+      font-size: 16px;
+    }
+
+    &__title {
+      color: $black;
+    }
+
+    &__value {
+      font-weight: 550;
+    }
+  }
+
+  .ant-modal-footer {
+    border-top: 0;
+    padding-top: 30px;
+    padding-bottom: 15px;
+
+    button {
+      color: white;
+      height: 38px;
+      width: 100px;
+      font-size: 15px;
+
+      .anticon{
+        vertical-align: 0.08em;
+        font-size: 16px;
+        margin-left: 14px;
+      }
+    }
+
+    .cancel {
+      background-color: $decline;
+    }
+
+    .cancel:hover {
+      border-color: $decline-dark;
+    }
+
+    .ok {
+      background-color: $accept;
+    }
+
+    .ok:hover {
+      border-color: $accept-dark;
+    }
+  }
+}
+
+.prompt-pending {
+  width: 500px !important;
+
+  .ant-modal-close {
+    display: none;
+  }
+  
+  .ant-modal-body {
+    padding: 20px 25px 40px;
+
+    .info {
+      font-size: 15px;
+    }
+
+    h4 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 25px;
+      font-weight: 600;
+      color: $sparlay;
+      text-align: center;
+    }
+
+    p {
+      margin: 0;
+      color: $black;
+      font-size: 15px;
+      text-align: center;
+      font-weight: 550;
+    }
+
+    button {
+      width: 150px;
+      height: 40px;
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .ant-form-item {
+      margin-bottom: 12px !important;
+      padding: 0 5px;
+    }
+  }
+
+  .ant-modal-footer {
+    display: none;
+  }
+}
+
+.sparlay-loading {
+
+  .ant-modal-content {
+    padding-top: 200px;
+    background-color: transparent;
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+  }
+
+  .ant-modal-close {
+    display: none;
+  }
+
+  .field {
+    color: white;
+    padding: 12px 16px 10px;
+    text-align: center;
+
+    label {
+      padding-left: 30px;
+      font-size: 20px;
+      color: white;
+    }
+
+    &__value {
+      font-weight: 550;
+    }
+
+    .anticon-spin {
+      color: white;
+    }
+  }
+
+  .ant-modal-footer {
+    visibility: hidden;
+  }
+}

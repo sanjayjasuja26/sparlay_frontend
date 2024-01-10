@@ -1,0 +1,178 @@
+@import '../../../../resources/mixins';
+
+.select-payment {
+  width: 400px !important;
+
+  .detail {
+    padding: 15px 20px;
+    margin-bottom: 20px !important;
+
+    .row {
+      margin: 0!important;
+    }
+    .select {
+      margin: 10px auto 20px;
+    }
+    .item {
+      height: 45px;
+      line-height: 45px;
+      width: 150px;
+      text-align: center;
+      border-radius: 5px !important;
+      margin: 0 10px;
+      font-size: 18px;
+    }
+    .ant-select-selection-selected-value, input {
+      color: $black;
+      font-size: 17px;
+    }
+    .available-title {
+      color: $text-darken;
+      font-size: 15px;
+    }
+    h6 {
+      margin: 15px 0 0;
+    }
+    .new_payment {
+      margin-top: 15px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 16px;
+      color: $sky;
+    }
+    .new_payment:hover {
+      color: #0072d6;
+    }
+  }
+}
+
+.set-payment {
+  width: 500px !important;
+
+  .detail {
+    padding: 15px 20px;
+    margin-bottom: 20px !important;
+
+    p {
+      color: $black;
+    }
+
+    .check_area {
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      .ant-checkbox-wrapper {
+        margin: 10px 0 0 150px;
+        color: $black;
+        font-size: 16px;
+      }
+      .ant-checkbox-checked::after {
+        border: 0;
+      }
+    }
+
+    .check_area-m {
+      display: grid;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      .ant-checkbox-wrapper {
+        margin-top: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        color: $black;
+        font-size: 16px;
+      }
+      .ant-checkbox-checked::after {
+        border: 0;
+      }
+    }
+
+    .row {
+      margin: 0;
+    }
+    .black-button {
+      display: block;
+      background-color: $black;
+      color: $gray-darken;
+      height: 45px;
+      border-width: 0 !important;
+      font-size: 16px;
+    }
+
+    .black-button:hover {
+      color: white;
+      background-color: $black;
+    }
+
+    .black-button:focus {
+      color: white;
+      background-color: $black;
+    }
+
+    .black-button:active {
+      color: $gray-darken;
+    }
+    .desktop-button {
+      width: 300px;
+      margin: auto;
+    }
+    .mobile-button {
+      width: 150px;
+      margin: auto;
+    }
+    .back {
+      position: relative;
+      top: 32px;
+      color: gray;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .back:hover {
+      color: $black;
+    }
+  }
+}
+
+.add-card {
+  width: 400px !important;
+
+  .StripeElement {
+    height: 40px;
+    padding: 10px 12px;
+    margin-top: 10px;
+    width: 100%;
+    color: #32325d;
+    border: 1px solid $border1;
+    border-radius: 4px;
+
+    -webkit-transition: border-color 200ms ease;
+    transition: border-color 200ms ease;
+  }
+  .StripeElement--focus {
+    border-color: $black;
+  }
+  .StripeElement--invalid {
+    border-color: #fa755a;
+  }
+  .StripeElement--webkit-autofill {
+    background-color: #fefde5 !important;
+  }
+  .detail {
+    p {
+      color: red;
+      margin-top: 2px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.add-paypal {
+  width: 400px !important;
+
+  .field {
+    display: block;
+    padding: 0px;
+    margin-top: 10px;
+  }
+}
